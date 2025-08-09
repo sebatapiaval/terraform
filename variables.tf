@@ -12,3 +12,9 @@ variable "zone" {
   description = "GCP zone"
   default     = "us-central1-a"
 }
+
+variable "name" {
+  description = "Nombre de la máquina virtual"
+  type        = string
+  default     = "vm-dev"
+}

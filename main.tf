@@ -1,5 +1,5 @@
 resource "google_compute_instance" "default" {
-  name         = "vm-dev"
+  name         = "var.name"
   machine_type = "e2-micro"
   zone         = var.zone
 

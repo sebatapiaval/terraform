@@ -1,20 +1,26 @@
 variable "project_id" {
-  description = "GCP project ID"
+  description = "ID del proyecto de Google Cloud"
+  type        = string
+}
+
+variable "vm_names" {
+  description = "Lista de nombres para las máquinas virtuales"
+  type        = list(string)
+}
+
+variable "credentials_file" {
+  description = "Ruta al archivo de credenciales de GCP"
   type        = string
 }
 
 variable "region" {
-  description = "GCP region"
+  description = "Región de Google Cloud"
+  type        = string
   default     = "us-central1"
 }
 
 variable "zone" {
-  description = "GCP zone"
-  default     = "us-central1-a"
-}
-
-variable "name" {
-  description = "Nombre de la máquina virtual"
+  description = "Zona de Google Cloud"
   type        = string
-  default     = "vm-dev"
+  default     = "us-central1-a"
 }

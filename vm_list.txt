@@ -1,3 +1,4 @@
 vmdos
 vmdoss
 vmdosss
+vmtres

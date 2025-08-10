@@ -4,23 +4,23 @@ variable "google_credentials" {
 }
 
 variable "project_id" {
-  description = "ID del proyecto de GCP"
+  description = "ID del proyecto en GCP"
   type        = string
 }
 
 variable "region" {
-  description = "Región de GCP"
+  description = "Región donde se crearán los recursos"
   type        = string
   default     = "us-central1"
 }
 
 variable "zone" {
-  description = "Zona de GCP"
+  description = "Zona donde se crearán los recursos"
   type        = string
   default     = "us-central1-a"
 }
 
 variable "vm_names" {
-  description = "Lista de nombres de las máquinas virtuales"
+  description = "Lista de nombres para las máquinas virtuales"
   type        = list(string)
 }
